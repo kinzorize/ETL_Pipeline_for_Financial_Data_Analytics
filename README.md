@@ -20,3 +20,9 @@ I build an ETL Pipeline for financial data analytics using GCP-IaC
 * GCP BigQuery
 * GCP Dataproc
 * GCP Deployment Manager
+
+# Aim
+
+The aim of this project is to build an ETL pipeline for the Financial Data Set on GCP, enabling the extraction, transformation, and loading of data from a SQL server to BigQuery for analytics purposes.
+
+![Architecture](GCP.png)
