@@ -47,3 +47,13 @@ Unless it will not run.
 Add id to the column because the data do not have id column
 query for the column: 
 alter table [india-equity-stock].[dbo].[financial-dataset] add id int not null identity(1,1)
+Sign in to your google cloud account and open your cloud shell and type :
+gcloud config set project dataflow-stockdata
+Then "Authorize cloud shell" and type "y" to set the project dataflow-stockdata
+Open your cloud shell editor and open your terminal
+make a folder "mkdir bq-etl-2023"
+then cd into the folder you created
+open your cloud shell editor and click on the folder "bq-etl-2023"
+click on the 3 dots on the top right corner of your cloud shell editor
+And upload the deployment_manager folder 
+then cd into your deployment_manager
