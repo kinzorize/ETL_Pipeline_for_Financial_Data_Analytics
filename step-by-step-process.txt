@@ -1,0 +1,9 @@
+Data is downloaded from this india stock market website
+url : https://www.bseindia.com/markets/equity/EQReports/StockPrcHistori.html?flag=0
+
+sign in to your aws account
+search for rds
+click create database
+select microsoft sql server
+allow public access every other remain unchange.
+click create database
