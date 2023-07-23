@@ -7,3 +7,4 @@ click create database
 select microsoft sql server
 allow public access every other remain unchange.
 click create database
+click on the rds name you created and copy the endpoint.
