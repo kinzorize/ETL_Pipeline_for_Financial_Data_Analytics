@@ -8,3 +8,22 @@ select microsoft sql server
 allow public access every other remain unchange.
 click create database
 click on the rds name you created and copy the endpoint.
+then go to mysql server management studio
+paste the endpoint to server name 
+If you are having connection issue.
+Go to your default security group from your rds and add a custom TCP of 1433 port using your IP address.
+- You can get your IP address from whatismyipaddress.com
+
+Additionally if the error persist go to your 
+    Open "SQL Server Configuration Manager"
+
+    Now Click on "SQL Server Network Configuration" and Click on "Protocols for Name"
+
+    Right Click on "TCP/IP" (make sure it is Enabled) Click on Properties
+
+    Now Select "IP Addresses" Tab -and- Go to the last entry "IP All"
+
+    Enter "TCP Port" 1433.
+
+    Now Restart "SQL Server .Name." using "services.msc" (winKey + r)
+
