@@ -57,3 +57,39 @@ open your cloud shell editor and click on the folder "bq-etl-2023"
 click on the 3 dots on the top right corner of your cloud shell editor
 And upload the deployment_manager folder 
 then cd into your deployment_manager
+Added 2023 to the end of the names.
+then run this command :
+gcloud deployment-manager deployments create gcp-bq-etl-deployment-2023 --config finance_project_deployment.yaml
+You need to grant your project " Deployment Manager Editor" 
+The steps below:
+
+    Open Google Cloud Console:
+    Sign in to the Google Cloud Console (https://console.cloud.google.com/) with your Google account.
+
+    Select the Project:
+    Ensure that you have selected the project to which you want to add the Deployment Manager role. You can switch between projects using the project selector dropdown in the top navigation bar.
+
+    Access IAM & Admin:
+    In the Google Cloud Console, click on the navigation menu (☰) in the top left corner, then navigate to "IAM & Admin" > "IAM."
+
+    Add Member:
+    In the IAM section, you will see a list of IAM roles assigned to different members (users, service accounts, and groups). Click on the "+ ADD" button to add a new member.
+
+    Enter Member Email:
+    In the "Add members" dialog, enter the email address of the user to whom you want to grant the Deployment Manager role. If you want to grant the role to a Google Group or a service account, you can also enter their respective email addresses.
+
+    Choose Role:
+    In the "Select a role" dropdown, type "Deployment Manager" in the search bar to find the available roles related to Deployment Manager.
+
+    Select Role:
+    Choose the appropriate role that you want to assign. Commonly used roles related to Deployment Manager include:
+
+    Deployment Manager Editor: This role allows users to create and manage deployments but not modify IAM policies.
+    Deployment Manager Admin: This role allows users to create and manage deployments, as well as modify IAM policies.
+    Choose the role that aligns with the level of access you want to grant.
+
+    Optional: Assign More Roles (if needed):
+    If you need to assign additional roles, you can click the "+ ADD ANOTHER ROLE" button and repeat the process. For example, you might want to grant the user other permissions like Compute Engine Admin, Storage Admin, etc., depending on their responsibilities.
+
+    Save:
+    After selecting the role(s), click on the "SAVE" button to add the Deployment Manager role to the member.
