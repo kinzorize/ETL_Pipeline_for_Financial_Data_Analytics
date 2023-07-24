@@ -93,3 +93,5 @@ The steps below:
 
     Save:
     After selecting the role(s), click on the "SAVE" button to add the Deployment Manager role to the member.
+Next step in to update our compute engine and install Apache Nifi.
+
