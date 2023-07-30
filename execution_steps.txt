@@ -11,7 +11,7 @@ Deployment manager commands:
 
 gcloud deployment-manager deployments create gcp-bq-etl-deployment --config finance_project_deployment.yaml
 gcloud deployment-manager deployments delete gcp-bq-etl-deployment
-
+gcloud deployment-manager deployments create gcp-bq-etl-deployment-2023 --config finance_project_deployment.yaml
 
 Nifi Instalation:
 ------------------
