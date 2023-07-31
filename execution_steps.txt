@@ -55,6 +55,12 @@ cd nifi-1.16.0/bin
 ./nifi.sh start
 
 
+queryDatabaseTablerecord
+PutGcsObject
+
+jdbc:sqlserver://uchechukwu-2023.ckumhpqxxjjn.us-east-1.rds.amazonaws.com;port=1433;database=financial_dataset;authentication=NotSpecified;encrypt=true;trustServerCertificate=true
+
+
 Insert_dt field in PutGcsBucket:
 --------------------------------
 insert_dt=${now():format("yyyy-MM-dd")}/${filename}
