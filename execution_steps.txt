@@ -57,9 +57,14 @@ cd nifi-1.16.0/bin
 
 queryDatabaseTablerecord
 PutGcsObject
-
+Add this into Configure Controller ServiceDBCPConnectionPool 1.16.0
 jdbc:sqlserver://uchechukwu-2023.ckumhpqxxjjn.us-east-1.rds.amazonaws.com;port=1433;database=financial_dataset;authentication=NotSpecified;encrypt=true;trustServerCertificate=true
 
+install the driver 
+
+com.microsoft.sqlselver.jdbc.SQLServerDriver.
+
+tar -xzvf sqljdbc_12.2.0.0_enu.tar.gz
 
 Insert_dt field in PutGcsBucket:
 --------------------------------
